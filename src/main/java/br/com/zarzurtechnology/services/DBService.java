@@ -23,6 +23,6 @@ public class DBService {
         Todo t3 = new Todo(null, "Viajar", "Viajar para a casa da familia no interior", LocalDateTime.parse("28/05/2021 19:00", formatter), false);
         Todo t4 = new Todo(null, "Dieta", "Não esquecer de fazer sempre a dieta regrada", LocalDateTime.parse("18/04/2021 19:00", formatter), true);
 
-        todoRepository.saveAll(Arrays.asList(t1));
+        todoRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
     }
 }
