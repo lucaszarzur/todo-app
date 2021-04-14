@@ -1,9 +1,14 @@
+### Gradle ###
 HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+
+### Maven ###
+log/
+target/
 
 ### STS ###
 .apt_generated
@@ -13,6 +18,10 @@ build/
 .settings
 .springBeans
 .sts4-cache
+
+### Java ###
+*.class
+*.log
 
 ### IntelliJ IDEA ###
 .idea
