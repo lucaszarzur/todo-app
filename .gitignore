@@ -1,4 +1,4 @@
-### Gradle ###
+# Gradle
 HELP.md
 .gradle
 build/
@@ -6,11 +6,14 @@ build/
 !**/src/main/**
 !**/src/test/**
 
-### Maven ###
+# Maven
 log/
 target/
+.mvn
+mvnw
+mvnw.cmd
 
-### STS ###
+# STS
 .apt_generated
 .classpath
 .factorypath
@@ -19,23 +22,26 @@ target/
 .springBeans
 .sts4-cache
 
-### Java ###
+# Java
 *.class
 *.log
 
-### IntelliJ IDEA ###
+# Others
+web/
+
+# IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 out/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+# VS Code
 .vscode/
