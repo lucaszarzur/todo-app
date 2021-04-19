@@ -2,11 +2,9 @@ package br.com.zarzurtechnology.services;
 
 import br.com.zarzurtechnology.domain.Todo;
 import br.com.zarzurtechnology.repositories.TodoRepository;
+import br.com.zarzurtechnology.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +18,7 @@ public class TodoService {
     public Todo findById(Integer id) {
         Optional<Todo> todo = todoRepository.findById(id);
 
-        return todo.orElse(null);
+        return todo.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! ID: " + id + ", Tipo: " + Todo.class.getName()));
     }
 
     public List<Todo> findAll() {
