@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+.badge {
+    margin-top: 1.5rem;
+    text-align: end;
+}
+
+.badge button {
+    margin: auto;
+    width: 20%;
+}
+
 .content {
     width: 100%;
 }
