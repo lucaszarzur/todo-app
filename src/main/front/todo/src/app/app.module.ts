@@ -14,13 +14,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FinishedComponent } from './components/finished/finished.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        ReadAllComponent
+        ReadAllComponent,
+        FinishedComponent
     ],
     imports: [
         BrowserModule,
