@@ -33,6 +33,15 @@ export class ReadAllComponent implements OnInit {
     })
   }
 
+  finish(item: Todo): void {
+    item.finished = true;
+    this.service.update(item).subscribe((response) => {
+      this.service.message("Task finalizada com sucesso!");
+      this.todoList = this.todoList.filter(todo => todo.id !== item.id);
+      this.closed++;
+    });
+  }
+
   delete(id: any): void {
     this.service.delete(id).subscribe((response) => {
       if(response === null) {
